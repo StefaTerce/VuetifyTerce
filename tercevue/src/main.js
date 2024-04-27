@@ -1,14 +1,17 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import Vuetify from 'vuetify';
+import { createVuetify } from 'vuetify'; // Import createVuetify
 import 'vuetify/dist/vuetify.min.css';
 
-// Create a new Vuetify instance
-const vuetify = new Vuetify();
+const app = createApp(App);
 
-// Create the Vue app instance and use Vuetify and router
-createApp(App)
-  .use(router)
-  .use(vuetify)
-  .mount('#app');
+app.use(router);
+
+// Instantiate Vuetify using createVuetify
+const vuetify = createVuetify();
+
+// Use Vuetify plugin
+app.use(vuetify);
+
+app.mount('#app');
