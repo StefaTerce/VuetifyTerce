@@ -5,15 +5,14 @@
         <v-row align="center" justify="center">
           <v-col cols="4" md="5">
             <v-card class="pa-4" outlined tile>
-              <v-card-title class="headline">You have 50 objects and you have to choose which you
+              <v-card-title class="headline">scegli tra 50 OGGETTI IL TUO PREFERITO
                 prefer</v-card-title>
-              <v-card-subtitle>You have multi rounds where you have to choose between two different
-                clothes</v-card-subtitle>
+              <v-card-subtitle>multi rounds dove scegliere</v-card-subtitle>
             </v-card>
           </v-col>
         </v-row>
         <v-row align="center" justify="center">
-          <ClothingSelection />
+          <TerceSelection/>
         </v-row>
       </v-container>
     </v-main>
@@ -21,11 +20,11 @@
 </template>
 
 <script>
-import ClothingSelection from './components/ClothingSelection.vue'
+import TerceSelection from './components/TerceSelection.vue'
 export default {
   name: 'App',
   components: {
-    ClothingSelection
+    TerceSelection
   }
 }
 </script>
