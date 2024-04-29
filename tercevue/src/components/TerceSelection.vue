@@ -19,7 +19,7 @@
           <v-card-title>{{ product.title }}</v-card-title>
           <v-card-subtitle>Prezzo: {{ product.price }}</v-card-subtitle>
           <v-card-actions>
-            <v-btn color="primary" @click="chooseProduct(product)">Scegli</v-btn>
+            <v-btn color="success" @click="chooseProduct(product)">Scegli</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -124,7 +124,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #02050900;
   border: 1px solid #ccc;
 }
 
@@ -146,7 +146,7 @@ export default {
 .choose-button {
   padding: 8px 16px;
   background-color: #4caf50;
-  color: white;
+  color: rgba(255, 255, 255, 0.573);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -156,4 +156,9 @@ export default {
   text-align: center;
   padding: 20px;
 }
+
+.center-btn {
+  margin: auto;
+}
+
 </style>
